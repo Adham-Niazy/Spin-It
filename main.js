@@ -72,4 +72,6 @@ const t1 = gsap.timeline({
     duration: 1
   }
 })
-t1.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1})
+t1.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1});
+t1.fromTo("nav", { y: "-100%" }, { y: "0" });
+t1.fromTo(".title", { opacity: "0" }, { opacity: "1" });
