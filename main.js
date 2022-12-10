@@ -31,7 +31,6 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   camera.aspect = sizes.width / sizes.height;
   renderer.setSize(sizes.width, sizes.height);
-  console.log("Hi");
 })
 
 // Light
@@ -63,6 +62,5 @@ const loop = () => {
   controls.update();
   renderer.render(scene, camera);
   window.requestAnimationFrame(loop);
-  console.log("Hi - LOOP");
 }
 loop();
