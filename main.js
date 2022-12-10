@@ -15,3 +15,7 @@ const material = new THREE.MeshStandardMaterial({
 const mesh = new THREE.Mesh(geometry, material);
 // 4) Then We will add the resulted (MESH) to the Scene
 scene.add(mesh);
+
+// Camera
+const camera = new THREE.PerspectiveCamera(45, 800, 600);
+scene.add(camera);
