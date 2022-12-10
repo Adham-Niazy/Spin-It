@@ -49,3 +49,9 @@ nav ul {
   text-align: center;
   letter-spacing: 2px;
 }
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 2rem;
+  }
+}
